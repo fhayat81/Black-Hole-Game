@@ -128,7 +128,7 @@ function Game({ game, changeGame }) {
         <div className="flex mt-56 flex-col items-center justify-center sm:mt-2 lg:mt-10">
           {circles}
           {(gameOver || player1 > 11 || player2 > 10) && (
-            <p className="text-white mt-4 text-2xl font-bold tracking-wider">GAME OVER!</p>
+            <p className="text-white mt-4 absolute bottom-3 text-2xl font-bold tracking-wider">GAME OVER!</p>
           )}
           {!start && (
             <button
