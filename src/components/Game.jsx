@@ -74,7 +74,7 @@ function Game({ game, changeGame }) {
         <div
           key={`circle-${row}-${pos}`}
           id={`circle-${row}-${pos}`}
-          className={`w-[40px] h-[40px] sm:w-[65px] sm:h-[65px] hover:scale-105 mx-2 bg-black bg-opacity-90 flex items-center justify-center text-white text-2xl hexagon
+          className={`w-[40px] h-[40px] md:w-[55px] md:h-[55px] lg:w-[65px] lg:h-[65px] hover:scale-105 mx-2 bg-black bg-opacity-90 flex items-center justify-center text-white text-2xl hexagon
             ${
               circleData
                 ? circleData.owner === "Player1"
@@ -125,7 +125,7 @@ function Game({ game, changeGame }) {
           </p>
         </div>
 
-        <div className="flex mt-56 flex-col items-center justify-center sm:mt-2 md:mt-10">
+        <div className="flex mt-56 flex-col items-center justify-center sm:mt-2 lg:mt-10">
           {circles}
           {(gameOver || player1 > 11 || player2 > 10) && (
             <p className="text-white mt-4 text-2xl font-bold tracking-wider">GAME OVER!</p>
