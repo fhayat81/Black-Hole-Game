@@ -1,0 +1,22 @@
+body {
+  background-image: url("/src/assets/bg.webp");
+  background-size: cover;
+}
+
+.hexagon {
+  opacity: 0.8;
+  color: white;
+  font-size: 2xl;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    50% 0%,     /* Top center */
+    100% 25%,   /* Top right */
+    100% 75%,   /* Bottom right */
+    50% 100%,   /* Bottom center */
+    0% 75%,     /* Bottom left */
+    0% 25%      /* Top left */
+  );
+  transition: transform 0.2s ease-in-out;
+}
